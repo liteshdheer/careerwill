@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+  </head>
+  <body class="cstm-color">
+    <!-- navbar start -->
+    <header>
+      <nav class="navbar navbar-light cstm-nav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="image/careerwill-App-logo.png" alt="" />
+            <!-- <img src="image/careerwill app 192x192.png" width="110px" alt="" /> -->
+          </a>
+        </div>
+      </nav>
+    </header>
+    <!-- navbar end -->
+    <!-- form section start -->
+    <section class="cstm-form ">
+      <!-- <div class=""> -->
+        <!-- <div class="col-md-4"></div> -->
+        <div class="cstm-head">
+          <h2>csc / cyber cafe / internet shop dashboard</h2>
+        </div>
+        <!-- <div class="col-md-4"></div> -->
+      <!-- </div> -->
+      <div class="login-box">
+        <!-- <h2>Careerwill App</h2> -->
+        <form>
+          <div class="user-box">
+            <input type="number" name="" required="" />
+            <label>Phone</label>
+          </div>
+          <div class="user-box">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Course Selection</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+            <!-- <label>Password</label> -->
+          </div>
+          <div id="toggleButton" class="cstm-coupne">
+            <p href="#">If you have coupen code <a href="#">click here</a></p>
+          </div>
+          <div id="data" class="hidden">
+            <div class="user-box">
+              <input type="text" name="" required="" />
+              <label>Coupen Code</label>
+            </div>
+          </div>
+          <div class="submit-btn">
+            <a href="#" class="cstm-submit">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              Submit
+            </a>
+          </div>
+        </form>
+      </div>
+      <div class="cstm-height"></div>
+    </section>
+
+    <!-- form section end -->
+    <!-- footer start -->
+
+    <footer class="cstm-footr">
+      <div class="container-fluid">
+        <div class="cstm-footer">
+          <p>Copyright © 2023 Careerwill All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#toggleButton").click(function () {
+          $("#data").toggle();
+          $(this).hide();
+        });
+      });
+    </script>
+  </body>
+</html>
